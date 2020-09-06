@@ -1,0 +1,605 @@
+<MainWindow>:
+
+	button1:button1
+	button2:button2
+	button3:button3
+	button4:button4
+	button5:button5
+	button6:button6
+
+	switch1:switch1
+	switch2:switch2
+	switch3:switch3
+	switch4:switch4
+	switch5:switch5
+	switch6:switch6
+	switch1_label:switch1_label
+	switch2_label:switch2_label
+	switch3_label:switch3_label
+	switch4_label:switch4_label
+	switch5_label:switch5_label
+	switch6_label:switch6_label
+	switch1_backimage:switch1_backimage
+	switch2_backimage:switch2_backimage
+	switch3_backimage:switch3_backimage
+	switch4_backimage:switch4_backimage
+	switch5_backimage:switch5_backimage
+	switch6_backimage:switch6_backimage
+
+	floatlayout3:floatlayout3
+
+# mainwindow/
+	FloatLayout:
+		canvas.before:
+			Rectangle:
+				source: 'obraz1.jpg'
+				pos: self.pos
+				size: self.size
+
+# mainwindow/floatlayout/
+		FloatLayout:
+			pos_hint:{"x":0, "y": 0}
+			size_hint:0.3,1
+
+			Label:
+
+				pos_hint:{"x":0.05, "y": 0.9}
+				size_hint:0.9,0.1
+				text:"Menu Glowne :"
+# mainwindow/floatlayout/floatlayout1/button1
+			Image:
+				pos_hint:{"x":0.1, "y": 0.8}
+				size_hint:0.8,0.1
+				source:'button_normal.png'
+				allow_stretch: True
+				keep_ratio: False
+			Image:
+				id: button1
+				pos_hint:{"x":0.1, "y": 0.8}
+				size_hint:0.8,0.1
+				source:'button_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity: 1
+			Label:
+				pos_hint:{"x":0.1, "y": 0.8}
+				size_hint:0.8,0.1
+				text:"----->>>"
+
+# mainwindow/floatlayout/floatlayout1/button2
+			Image:
+				pos_hint:{"x":0.1, "y": 0.65}
+				size_hint:0.8,0.1
+				source:'button_normal.png'
+				allow_stretch: True
+				keep_ratio: False
+			Image:
+				id: button2
+				pos_hint:{"x":0.1, "y": 0.65}
+				size_hint:0.8,0.1
+				source:'button_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity: 0
+			Label:
+				pos_hint:{"x":0.1, "y": 0.65}
+				size_hint:0.8,0.1
+				text:"EKRAN 2"
+
+# mainwindow/floatlayout/floatlayout1/button3
+			Image:
+				pos_hint:{"x":0.1, "y": 0.5}
+				size_hint:0.8,0.1
+				source:'button_normal.png'
+				allow_stretch: True
+				keep_ratio: False
+			Image:
+				id: button3
+				pos_hint:{"x":0.1, "y": 0.5}
+				size_hint:0.8,0.1
+				source:'button_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity: 0
+			Label:
+				pos_hint:{"x":0.1, "y": 0.5}
+				size_hint:0.8,0.1
+				text:"VIDEO"
+
+# mainwindow/floatlayout/floatlayout1/button4
+			FloatLayout:
+				pos_hint:{"x":0.1, "y": 0.35}
+				size_hint:0.8,0.1
+				Image:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					source:'button_normal.png'
+					allow_stretch: True
+					keep_ratio: False
+				Image:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					id: button4
+					source:'button_down.png'
+					allow_stretch: True
+					keep_ratio: False
+					opacity: 0
+				Label:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					text:"GALERIA"
+
+# mainwindow/floatlayout/floatlayout1/button5
+			FloatLayout:
+				pos_hint:{"x":0.1, "y": 0.2}
+				size_hint:0.8,0.1
+				Image:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					source:'button_normal.png'
+					allow_stretch: True
+					keep_ratio: False
+				Image:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					id: button5
+					source:'button_down.png'
+					allow_stretch: True
+					keep_ratio: False
+					opacity: 0
+				Label:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					text:"EKRAN 5"
+
+# mainwindow/floatlayout/floatlayout1/button6
+			FloatLayout:
+				pos_hint:{"x":0.1, "y": 0.05}
+				size_hint:0.8,0.1
+				Image:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					source:'button_normal.png'
+					allow_stretch: True
+					keep_ratio: False
+				Image:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					id: button6
+					source:'button_down.png'
+					allow_stretch: True
+					keep_ratio: False
+					opacity: 0
+				Label:
+					pos_hint:{"x":0, "y": 0}
+					size_hint:1,1
+					text:"EKRAN 6"
+
+# mainwindow/floatlayout
+		FloatLayout:
+			id: floatlayout3
+			#pos: (240,0)
+			pos_hint:{"x":0.3, "y": 0}
+			size_hint:0.7,1
+
+			canvas.before:
+				Color:
+					rgba: 0.3,0.3,0.3,0.5
+				Rectangle:
+					pos: self.pos
+					size: self.size
+
+# mainwindow/floatlayout/floatlayout2/SWITCH 1
+			Label:
+				id: switch1_label
+				pos_hint:{"x":0.1, "y": 0.85}
+				size_hint:0.6,0.1
+				text:"Switch 1"
+			Image:
+				id: switch1_backimage
+				pos_hint:{"x":0.7, "y": 0.85}
+				size_hint:0.3,0.1
+				source:'tlo.png'
+				opacity: 0
+			Switch:
+				id: switch1
+				pos_hint:{"x":0.7, "y": 0.85}
+				size_hint:0.3,0.1
+
+# mainwindow/floatlayout/floatlayout2/SWITCH 2
+			Label:
+				id: switch2_label
+				pos_hint:{"x":0.1, "y": 0.75}
+				size_hint:0.6,0.1
+				text:"Switch 2"
+			Image:
+				id: switch2_backimage
+				pos_hint:{"x":0.7, "y": 0.75}
+				size_hint:0.3,0.1
+				source:'tlo.png'
+				opacity: 0
+			Switch:
+				id: switch2
+				pos_hint:{"x":0.7, "y": 0.75}
+				size_hint:0.3,0.1
+
+# mainwindow/floatlayout/floatlayout2/SWITCH 3
+			Label:
+				id: switch3_label
+				pos_hint:{"x":0.1, "y": 0.65}
+				size_hint:0.6,0.1
+				text:"Switch 3"
+			Image:
+				id: switch3_backimage
+				pos_hint:{"x":0.7, "y": 0.65}
+				size_hint:0.3,0.1
+				source:'tlo.png'
+				opacity: 0
+			Switch:
+				id: switch3
+				pos_hint:{"x":0.7, "y": 0.65}
+				size_hint:0.3,0.1
+
+# mainwindow/floatlayout/floatlayout2/SWITCH 4
+			Label:
+				id: switch4_label
+				pos_hint:{"x":0.1, "y": 0.55}
+				size_hint:0.6,0.1
+				text:"Switch 4"
+			Image:
+				id: switch4_backimage
+				pos_hint:{"x":0.7, "y": 0.55}
+				size_hint:0.3,0.1
+				source:'tlo.png'
+				opacity: 0
+			Switch:
+				id: switch4
+				pos_hint:{"x":0.7, "y": 0.55}
+				size_hint:0.3,0.1
+
+# mainwindow/floatlayout/floatlayout2/SWITCH 5
+			Label:
+				id: switch5_label
+				pos_hint:{"x":0.1, "y": 0.45}
+				size_hint:0.6,0.1
+				text:"Switch 5"
+			Image:
+				id: switch5_backimage
+				pos_hint:{"x":0.7, "y": 0.45}
+				size_hint:0.3,0.1
+				source:'tlo.png'
+				opacity: 0
+			Switch:
+				id: switch5
+				pos_hint:{"x":0.7, "y": 0.45}
+				size_hint:0.3,0.1
+
+# mainwindow/floatlayout/floatlayout2/SWITCH 6
+			Label:
+				id: switch6_label
+				pos_hint:{"x":0.1, "y": 0.35}
+				size_hint:0.6,0.1
+				text:"Switch 6"
+			Image:
+				id: switch6_backimage
+				pos_hint:{"x":0.7, "y": 0.35}
+				size_hint:0.3,0.1
+				source:'tlo.png'
+				opacity: 0
+			Switch:
+				id: switch6
+				pos_hint:{"x":0.7, "y": 0.35}
+				size_hint:0.3,0.1
+
+<SecondWindow>:
+	floatlayout1:floatlayout1
+	button1:button1
+	FloatLayout:
+		id: floatlayout1
+		canvas.before:
+			Rectangle:
+				source: 'obraz1.jpg'
+				pos: self.pos
+				size: self.size
+
+# button go back
+		FloatLayout:
+			pos_hint:{"x":0.05, "y": 0.0}
+			size_hint:0.3,0.1
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'button_normal.png'
+				allow_stretch: True
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				id: button1
+				source:'button_down.png'
+				allow_stretch: True
+				opacity: 0
+			Label:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				text:"Go back"
+
+
+
+<ThirdWindow>:
+	floatlayout1:floatlayout1
+	videoplayerfloatlayout:videoplayerfloatlayout
+	button1:button1
+
+	FloatLayout:
+		id: floatlayout1
+		canvas.before:
+			Rectangle:
+				source: 'obraz1.jpg'
+				pos: self.pos
+				size: self.size
+
+		FloatLayout:
+			id: videoplayerfloatlayout
+			pos_hint:{"x":0.0, "y": 0.1}
+			size_hint:1,0.9
+
+# button go back
+		FloatLayout:
+			pos_hint:{"x":0.05, "y": 0.0}
+			size_hint:0.3,0.1
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'button_normal.png'
+				allow_stretch: True
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				id: button1
+				source:'button_down.png'
+				allow_stretch: True
+				opacity: 0
+			Label:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				text:"Go back"
+
+<FourthWindow>:
+	floatlayout1:floatlayout1
+	imagefloatlayout:imagefloatlayout
+	btn_goback:btn_goback
+	btn_prevpic:btn_prevpic
+	btn_nextpic:btn_nextpic
+
+	FloatLayout:
+		id: floatlayout1
+		canvas.before:
+			Rectangle:
+				source: 'obraz1.jpg'
+				pos: self.pos
+				size: self.size
+
+		FloatLayout:
+			id: imagefloatlayout
+			pos_hint:{"x":0.0, "y": 0.1}
+			size_hint:1,0.9
+# button go back
+		FloatLayout:
+			pos_hint:{"x":0.05, "y": 0.0}
+			size_hint:0.2,0.1
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'button_normal.png'
+				allow_stretch: True
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				id: btn_goback
+				source:'button_down.png'
+				allow_stretch: True
+				opacity: 0
+			Label:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				text:"Go back"
+
+# button prev pic
+		FloatLayout:
+			pos_hint:{"x":0.3, "y": 0.0}
+			size_hint:0.2,0.1
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'button_normal.png'
+				allow_stretch: True
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				id: btn_prevpic
+				source:'button_down.png'
+				allow_stretch: True
+				opacity: 0
+			Label:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				text:"prev pic"
+
+# button next pic
+		FloatLayout:
+			pos_hint:{"x":0.55, "y": 0.0}
+			size_hint:0.2,0.1
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'button_normal.png'
+				allow_stretch: True
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				id: btn_nextpic
+				source:'button_down.png'
+				allow_stretch: True
+				opacity: 0
+			Label:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				text:"next pic"
+
+<FifthWindow>:
+	btn_goback:btn_goback
+
+	btn_up_tlo1:btn_up_tlo1
+	btn_up_tlo2:btn_up_tlo2
+	btn_left_tlo1:btn_left_tlo1
+	btn_left_tlo2:btn_left_tlo2
+	btn_right_tlo1:btn_right_tlo1
+	btn_right_tlo2:btn_right_tlo2
+	btn_down_tlo1:btn_down_tlo1
+	btn_down_tlo2:btn_down_tlo2
+
+	img_ball:img_ball
+
+    FloatLayout:
+		canvas.before:
+			Rectangle:
+				source: 'obraz1.jpg'
+				pos: self.pos
+				size: self.size
+
+		Image:
+			pos: (400,240)
+			size_hint:0.2,0.2
+
+			id: img_ball
+			allow_stretch: True
+			source: 'ball.jpg'
+
+# button go back
+		FloatLayout:
+			pos_hint:{"x":0.05, "y": 0.0}
+			size_hint:0.2,0.1
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'button_normal.png'
+				allow_stretch: True
+			Image:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				id: btn_goback
+				source:'button_down.png'
+				allow_stretch: True
+				opacity: 0
+			Label:
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				text:"Go back"
+
+# button up
+		FloatLayout:
+			pos_hint:{"x":0.15, "y": 0.4}
+			size_hint:0.1,0.1
+			Image:
+				id:btn_up_tlo1
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				id:btn_up_tlo2
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				pos_hint:{"x":0.1, "y": 0.1}
+				size_hint:0.8,0.8
+				source:'up_arrow.png'
+# button left
+		FloatLayout:
+			pos_hint:{"x":0.05, "y": 0.3}
+			size_hint:0.1,0.1
+			Image:
+				id:btn_left_tlo1
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				id:btn_left_tlo2
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				pos_hint:{"x":0.1, "y": 0.1}
+				size_hint:0.8,0.8
+				source:'left_arrow.png'
+# button right
+		FloatLayout:
+			pos_hint:{"x":0.25, "y": 0.3}
+			size_hint:0.1,0.1
+			Image:
+				id:btn_right_tlo1
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				id:btn_right_tlo2
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				pos_hint:{"x":0.1, "y": 0.1}
+				size_hint:0.8,0.8
+				source:'right_arrow.png'
+
+# button down
+		FloatLayout:
+			pos_hint:{"x":0.15, "y": 0.2}
+			size_hint:0.1,0.1
+			Image:
+				id:btn_down_tlo1
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				id:btn_down_tlo2
+				pos_hint:{"x":0, "y": 0}
+				size_hint:1,1
+				source:'tlo_down.png'
+				allow_stretch: True
+				keep_ratio: False
+				opacity:0
+			Image:
+				pos_hint:{"x":0.1, "y": 0.1}
+				size_hint:0.8,0.8
+				source:'down_arrow.png'
+
+<SixthWindow>:
+	floatlayout:floatlayout
+    FloatLayout:
+    	id: floatlayout
+		canvas.before:
+			Rectangle:
+				source: 'obraz1.jpg'
+				pos: self.pos
+				size: self.size
